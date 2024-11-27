@@ -7,7 +7,7 @@ if [[ $GIT_BRANCH == "origin/dev" ]]; then
     docker tag test priyankavijay/dev
     docker push priyankavijay/dev
 
-elif [[ $GIT_BRANCH == "origin/main" ]]; then
+elif [[ $GIT_BRANCH == "origin/master" ]]; then
     sh 'chmod +x build.sh'
     sh './build.sh'
     docker login -u priyankavijay -p dckr_pat_98Dx8iTWLuG96HX1jzNU1eSgMz0
